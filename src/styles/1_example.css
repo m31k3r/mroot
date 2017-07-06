@@ -1,0 +1,70 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  color: #222;
+  font-family: monospace;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 0 1.6rem;
+  padding: 1.6rem 0 0;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.2;
+}
+h2 {
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+h3 {
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+h4 {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 0.9em;
+}
+
+p {
+  margin: 1.6rem 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  margin: auto;
+  padding: 1.6rem;
+}
+
+.text-center {
+  text-align: center;
+}

@@ -1,0 +1,29 @@
+{
+  "author": "m31k3r",
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "description": "…",
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "babel-cli": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "cssnano": "^3.10.0",
+    "html-minifier": "^3.5.2",
+    "mkdirp": "^0.5.1",
+    "nodemon": "^1.11.0",
+    "postcss": "^6.0.6",
+    "uglify-js": "^3.0.23"
+  },
+  "main": "src/engine/index.js",
+  "name": "mroot",
+  "scripts": {
+    "dev": "open dist/index.html && nodemon --exec babel-node . -e css,html,js,json --watch src --dev",
+    "rebuild": "rm -rf dist && cp -r src/statics/ dist && babel-node ."
+  },
+  "version": "0.0.1"
+}
