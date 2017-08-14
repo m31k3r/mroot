@@ -19,11 +19,12 @@
     "postcss": "^6.0.6",
     "uglify-js": "^3.0.23"
   },
+  "license": "MIT",
   "main": "src/engine/index.js",
   "name": "mroot",
   "scripts": {
     "dev": "open dist/index.html && nodemon --exec babel-node . -e css,html,js,json --watch src --dev",
     "rebuild": "rm -rf dist && cp -r src/statics/ dist && babel-node ."
   },
-  "version": "0.0.1"
+  "version": "0.0.2"
 }

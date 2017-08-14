@@ -5,6 +5,8 @@ import fs from "fs";
 import path from "path";
 
 const readdirSyncR = (dir, filenames = []) => {
+  if (!fs.existsSync(dir)) return filenames;
+
   fs.readdirSync(dir).filter(f => f.charAt(0) != "_").map(f => {
 
     filenames = fs.statSync(path.join(dir, f)).isDirectory()
